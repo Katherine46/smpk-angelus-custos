@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SMPK Angelus Custos 1 Surabaya</title>
   <style>
-    body {
+  body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0b0c10;
@@ -29,13 +29,16 @@
       text-decoration: none;
       margin-left: 20px;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s, background-size 0.3s ease;
+      background-image: linear-gradient(120deg, #365819 0%, #365819 100%);
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
     }
     nav a:hover {
-      color: #ffffff;
+      color: white;
+      background-size: 100% 100%;
     }
     .hero {
-      background: url('8a63ad8e-777d-4054-a5b7-5e0eefd1f7a2.png') no-repeat center center/cover;
       height: 400px;
       display: flex;
       align-items: center;
@@ -46,6 +49,42 @@
       font-size: 2rem;
       font-weight: bold;
     }
+
+    .visi-misi {
+      background: url('https://angeluscustos.sch.id/wp-content/uploads/2022/11/artikel-1.webp') no-repeat center center/cover;
+      padding: 4rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .visi-misi-box {
+      background-color: rgba(255, 255, 255, 0.92);
+      color: #0b0c10;
+      padding: 2rem;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .visi-misi-box h2 {
+      color: #1f2833;
+      margin-top: 0;
+    }
+
+    .visi-misi-box p {
+      line-height: 1.6;
+    }
+
+    .visi-misi-box ul {
+      padding-left: 1.2rem;
+    }
+
+    .visi-misi-box ul li {
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+
     .content {
       max-width: 1000px;
       margin: auto;
@@ -54,6 +93,8 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
     }
+
+  
     .card {
       background: #1f2833;
       border-radius: 10px;
